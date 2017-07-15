@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="ToosameScan.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ToosameScan"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="16">
+        <StackPanel>
+            <StackPanel>
+                <TextBlock Text="微页扫码"/>
+                <TextBlock Text="v1.0" Foreground="Gray"/>
+            </StackPanel>
+
+            <StackPanel Margin="0,8,0,0">
+                <TextBlock TextWrapping="Wrap" Text="目前支持的功能："/>
+                <TextBlock TextWrapping="Wrap" Text="1. 智能识别网址打开浏览器跳转；" Foreground="Gray" FontSize="13"/>
+                <TextBlock TextWrapping="Wrap" Text="2. 自动复制识别的文本和网址；" Foreground="Gray" FontSize="13"/>
+                <TextBlock TextWrapping="Wrap" Text="3. 预览识别的网址或文本；" Foreground="Gray" FontSize="13"/>
+                <TextBlock TextWrapping="Wrap" Text="4. 生成二维码；" Foreground="Gray" FontSize="13"/>
+                <TextBlock TextWrapping="Wrap" Text="5. 保存二维码到相册 保存的图片 文件夹（400x400）；" Foreground="Gray" FontSize="13"/>
+            </StackPanel>
+
+            <TextBlock Text="关于隐私" Margin="0,8,0,0"/>
+
+            <StackPanel Margin="0,8,0,0">
+                <TextBlock TextWrapping="Wrap" Foreground="Red" Text="这个应用不会收集你的任何信息，没有访问网络的权限，只有调用摄像头的权限，不信我直接把源代码给你看行了吧！"/>
+
+                <TextBlock Margin="0,8,0,0" Text="我的其它应用"/>
+                <TextBlock TextWrapping="Wrap" Text="下载我开发的Win10独占社交应用：微页Toosame。" />
+                <HyperlinkButton NavigateUri="ms-windows-store://pdp/?productid=9nblggh5lpfh" Content="在应用商店下载"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
